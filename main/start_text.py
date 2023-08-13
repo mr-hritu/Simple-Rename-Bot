@@ -18,10 +18,7 @@ async def start_cmd(bot, msg):
 
 @Client.on_callback_query(filters.regex("start"))
 async def start(bot, msg, cb=True):   
-    txt=f"Hello {msg.from_user.mention} I am simple rename bot
-this bot is made by Prime Hritu
-
-✓ Send Me `/rename [filename.extension]` With Reply To A File. [ Replace [filename.extension] with The New Filename and its .extension (.jpg , .png , .jpeg , .mp3 , .mp4 , etc....)]"                                     
+    txt=f"Hello {msg.from_user.mention} I am simple rename bot this bot is made by Prime Hritu\n\n✓ Send Me `/rename [filename.extension]` With Reply To A File. [ Replace [filename.extension] with The New Filename and its .extension (.jpg , .png , .jpeg , .mp3 , .mp4 , etc....)]"                                     
     button= [[
         InlineKeyboardButton("Updates Channel 🇮🇳", url="https://t.me/Private_Bots")
         ],[
