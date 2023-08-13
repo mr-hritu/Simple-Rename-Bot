@@ -67,7 +67,7 @@ async def about(bot, msg):
     me=await bot.get_me()
     Master=f"<a href=https://t.me/Prime_Hritu>𝙃𝙧𝙞𝙩𝙪</a> & <a href=https://t.me/Prime_venom>𝙑𝙚𝙣𝙤𝙢</a>"  
     Manager="<a href=https://t.me/Prime_Hritu>𝙃𝙧𝙞𝙩𝙪</a>"
-    txt=f"<b>Bot Name: {me.mention}\nDeveloper: <a href=https://t.me/Prime_Hritu>𝙃𝙧𝙞𝙩𝙪</a>\nBot Updates: <a href=https://t.me/Private_Bots>𝙋𝙍𝙄𝙑𝘼𝙏𝙀 𝘽𝙊𝙏𝙎</a>\nMy Master's: {Master}\nManger: {Source}</b>"                 
+    txt=f"<b>Bot Name: {me.mention}\nDeveloper: <a href=https://t.me/Prime_Hritu>𝙃𝙧𝙞𝙩𝙪</a>\nBot Updates: <a href=https://t.me/Private_Bots>𝙋𝙍𝙄𝙑𝘼𝙏𝙀 𝘽𝙊𝙏𝙎</a>\nMy Master's: {Master}\nManger: {Manager}</b>"                 
     button= [[        
         InlineKeyboardButton("🚫 Close", callback_data="del"),
         InlineKeyboardButton("⬅️ Back", callback_data="start") 
