@@ -42,7 +42,7 @@ async def start(bot, msg, cb=True):
         InlineKeyboardButton("ℹ️ Help", callback_data="help"),
         InlineKeyboardButton("📡 About", callback_data="about") 
     ],[
-        InlineKeyboardButton("⭐ Rate", callback_data="rate")]  
+        InlineKeyboardButton("⭐ Rate", callback_data="rate")]]
     if cb:
         await msg.message.edit(text=txt, reply_markup=InlineKeyboardMarkup(button), disable_web_page_preview = True, parse_mode=enums.ParseMode.HTML)
     else:
