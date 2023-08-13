@@ -59,7 +59,7 @@ async def about(bot, msg):
 
 @Client.on_callback_query(filters.regex("rate"))
 async def rate(bot, msg):
-    txt = "**Click On Rate Here And Rate Me And My Works 👍**"
+    txt = "Click On Rate Here And Rate Me And My Works 👍"
     button= [[        
         InlineKeyboardButton("Rate Me ⭐", url="https://t.me/Rate_Here/10"),
         InlineKeyboardButton("⬅️ Back", callback_data="start") 
