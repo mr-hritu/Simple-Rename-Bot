@@ -22,7 +22,7 @@ async def fore(c, m):
 
 @Client.on_message(filters.command("start") & filters.private)                             
 async def start_cmd(bot, msg):
-    txt=f"Hello {msg.from_user.mention} I am simple rename bot this bot is made by Prime Hritu\n\n✓ Send Me `/rename [filename.extension]` With Reply To A File. [ Replace [filename.extension] with The New Filename and its .extension (.jpg , .png , .jpeg , .mp3 , .mp4 , etc....)]"
+    txt=f"<b>Hello {msg.from_user.mention} I am simple rename bot this bot is made by Prime Hritu\n\n✓ Send Me</b> <code>/rename [filename.extension]</code> <b>With Reply To A File. [ Replace [filename.extension] with The New Filename and its .extension (.jpg , .png , .jpeg , .mp3 , .mp4 , etc....)]</b>"
     btn = InlineKeyboardMarkup([[
         InlineKeyboardButton("Developer 🇮🇳", url="https://t.me/Prime_Hritu")
         ],[
@@ -35,7 +35,7 @@ async def start_cmd(bot, msg):
 
 @Client.on_callback_query(filters.regex("start"))
 async def start(bot, msg, cb=True):   
-    txt=f"Hello {msg.from_user.mention} I am simple rename bot this bot is made by Prime Hritu\n\n✓ Send Me `/rename [filename.extension]` With Reply To A File. [ Replace [filename.extension] with The New Filename and its .extension (.jpg , .png , .jpeg , .mp3 , .mp4 , etc....)]"                                     
+    txt=f"<b>Hello {msg.from_user.mention} I am simple rename bot this bot is made by Prime Hritu\n\n✓ Send Me</b> <code>/rename [filename.extension]</code> <b>With Reply To A File. [ Replace [filename.extension] with The New Filename and its .extension (.jpg , .png , .jpeg , .mp3 , .mp4 , etc....)]</b>"                                 
     button= [[
         InlineKeyboardButton("Updates Channel 🇮🇳", url="https://t.me/Private_Bots")
         ],[
