@@ -5,7 +5,7 @@ from config import ADMIN
 
 @Client.on_message(filters.command("start") & filters.private)                             
 async def start_cmd(bot, msg):
-    txt=f"Hello K I am simple rename bot
+    txt=f"Hello {msg.from_user.mention} I am simple rename bot
 this bot is made by Prime Hritu\n\n✓ Send Me `/rename [filename.extension]` With Reply To A File. [ Replace [filename.extension] with The New Filename and its .extension (.jpg , .png , .jpeg , .mp3 , .mp4 , etc....)]"
     btn = InlineKeyboardMarkup([[
         InlineKeyboardButton("Developer 🇮🇳", url="https://t.me/Prime_Hritu")
