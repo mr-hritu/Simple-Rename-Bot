@@ -1,6 +1,9 @@
 from pyrogram import Client, filters, enums
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup 
 from config import ADMIN
+from pyrogram import Client, filters
+from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup 
+from pyrogram.errors import UserBannedInChannel, UserNotParticipant
  
 @Client.on_message(filters.text & filters.private & filters.incoming)
 async def fore(c, m):
