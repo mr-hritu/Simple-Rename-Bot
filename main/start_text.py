@@ -23,13 +23,15 @@ async def fore(c, m):
 @Client.on_message(filters.command("start") & filters.private)                             
 async def start_cmd(bot, msg):
     txt=f"<b>Hello {msg.from_user.mention} I am simple rename bot this bot is made by Prime Hritu\n\n✓ Send Me</b> <code>/rename [filename.extension]</code> <b>With Reply To A File. [ Replace [filename.extension] with The New Filename and its .extension (.jpg , .png , .jpeg , .mp3 , .mp4 , etc....)]</b>"
-    btn = InlineKeyboardMarkup([[
-        InlineKeyboardButton("Developer 🇮🇳", url="https://t.me/Prime_Hritu")
-        ],[
+    btn= [[
         InlineKeyboardButton("Updates Channel 🇮🇳", url="https://t.me/Private_Bots")
-    ]])
+        ],[
+        InlineKeyboardButton("ℹ️ Help", callback_data="help"),
+        InlineKeyboardButton("📡 About", callback_data="about") 
+    ],[
+        InlineKeyboardButton("⭐ Rate", callback_data="rate")]]
     if msg.from_user.id != ADMIN:
-        return await msg.reply_text(text=txt, reply_markup=btn, disable_web_page_preview = True)
+        return await msg.reply_text(text=txt, reply_markup=InlineKeyboardMarkup(btn), disable_web_page_preview = True)
     await start(bot, msg, cb=False)
 
 
